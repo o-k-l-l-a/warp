@@ -34,7 +34,7 @@ VERSION="1.2.0"
 # Supported OS:
 #   1. Ubuntu
 #   2. Debian
-#   3. CentOS
+#   3. CloudLinux
 #   4. Alpine
 #   5. Arch
 #   6. Oracle
@@ -93,8 +93,8 @@ WP_STATUS=0
 # OS Variables
 OS_SYS=
 OS_INDEX=
-RELEASE=("Debian" "Ubuntu" "CentOS" "CentOS" "Alpine" "Arch")
-RELEASE_REGEX=("debian" "ubuntu" "centos|red hat|kernel|oracle linux|alma|rocky" "amazon linux" "alpine" "arch linux")
+RELEASE=("Debian" "Ubuntu" "CloudLinux" "CloudLinux" "Alpine" "Arch")
+RELEASE_REGEX=("debian" "ubuntu" "CloudLinux|red hat|kernel|oracle linux|alma|rocky" "amazon linux" "alpine" "arch linux")
 PKG_UPDATE=("apt -y update" "apt -y update" "yum -y update" "yum -y update" "apk update -f" "pacman -Sy")
 PKG_INSTALL=("apt -y --fix-broken install" "apt -y --fix-broken install" "yum -y install" "yum -y install" "apk add -f --no-cache" "pacman -S --noconfirm")
 
@@ -173,7 +173,7 @@ T[061]="Please run this script as root!"
 T[062]="Great News! You have Superuser privileges. Let's continue..."
 # check_os
 T[063]="Verifying if your OS is supported..."
-T[064]="Unfortunately, your OS is not supported at this time! \n  The script supports Debian, Ubuntu, CentOS, Arch or Alpine systems only.\n"
+T[064]="Unfortunately, your OS is not supported at this time! \n  The script supports Debian, Ubuntu, CloudLinux, Arch or Alpine systems only.\n"
 T[065]="Your os is compatible with this installation. Moving forward..."
 # install_base_packages
 T[066]="Installing essential packages for your OS..."
